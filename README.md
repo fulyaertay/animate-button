@@ -3,4 +3,4 @@
 
 ## Animation of button
 
-![image](./animate-button.gif)
+![image](./animate_button.gif)
