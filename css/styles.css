@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121213;
+    font-family: 'Poppins', sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width:200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 16px 14px 20px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div::before{
+    content: "";
+    background-image: conic-gradient(
+        #ff052f 20deg,
+        transparent 120deg
+    );
+    width:150%;
+    height:100%;
+    position: absolute;
+    animation:rotate 2s linear infinite;
+}
+
+div::after{
+    content: "Click Me";
+    width:190px;
+    height:190px;
+    background: #101010;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ff052f;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px rgb(12, 12, 12);
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
