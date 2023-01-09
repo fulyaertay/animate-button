@@ -1,6 +1,6 @@
 ## Animated Button with HTML/CSS
 
 
-## Animation of button
+## Visualization of the button
 
 ![image](./animate-button.png)
